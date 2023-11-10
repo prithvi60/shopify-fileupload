@@ -84,7 +84,7 @@ export default function Index() {
 
   return (
     <Page>
-      <ui-title-bar title="Remix app template">
+      <ui-title-bar title="Design Files from Customer">
         <button variant="primary" >
           Refresh Files
         </button>
@@ -96,7 +96,7 @@ export default function Index() {
               <BlockStack gap="500">
                 <BlockStack gap="200">
                   <Text as="h2" variant="headingMd">
-                    Customer Files
+                    Latest Files
                   </Text>
                 </BlockStack>
                 <BlockStack gap="200" >
