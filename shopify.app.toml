@@ -2,7 +2,7 @@
 
 name = "simple-file-uploader"
 client_id = "c79316471b1706092375856a9b9d4576"
-application_url = "https://harbour-boats-geology-cartridge.trycloudflare.com"
+application_url = "https://critical-speeches-defence-mart.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,10 +11,10 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://harbour-boats-geology-cartridge.trycloudflare.com/auth/callback",
-  "https://harbour-boats-geology-cartridge.trycloudflare.com/auth/shopify/callback",
-  "https://harbour-boats-geology-cartridge.trycloudflare.com/api/auth/callback",
-  "https://harbour-boats-geology-cartridge.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://critical-speeches-defence-mart.trycloudflare.com/auth/callback",
+  "https://critical-speeches-defence-mart.trycloudflare.com/auth/shopify/callback",
+  "https://critical-speeches-defence-mart.trycloudflare.com/api/auth/callback",
+  "https://critical-speeches-defence-mart.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]
