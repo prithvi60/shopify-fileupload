@@ -101,8 +101,7 @@ export default function Index() {
                     Latest Files
                   </Text>
                 </BlockStack>
-                <InlineStack>
-        <SpacingBackground width="436px" height="20px" margin>
+                <BlockStack gap="200">
           {arrayToMapOver.map((item,idx)=>
           (
       <InlineStack gap="400" wrap={false} blockAlign="center" key={idx}>
@@ -125,8 +124,7 @@ export default function Index() {
       </InlineStack>
           ))}
 
-        </SpacingBackground>
-      </InlineStack>
+      </BlockStack>
 
               </BlockStack>
             </Card>
