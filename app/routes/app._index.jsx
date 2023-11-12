@@ -12,6 +12,8 @@ import {
   List,
   Link,
   InlineStack,
+  SpacingBackground,
+  Placeholder
 } from "@shopify/polaris";
 import { authenticate } from "../shopify.server";
 
@@ -80,12 +82,12 @@ export default function Index() {
       shopify.toast.show("Product created");
     }
   }, [productId]);
-  const generateProduct = () => submit({}, { replace: true, method: "POST" });
-
+  // const generateProduct = () => submit({}, { replace: true, method: "POST" });
+  const arrayToMapOver = [1, 2, 3, 4, 5, 6];
   return (
     <Page>
       <ui-title-bar title="Design Files from Customer">
-        <button variant="primary" >
+        <button variant="primary" onClick={()=>shopify.toast.show("Loaded latest files")} >
           Refresh Files
         </button>
       </ui-title-bar>
@@ -99,14 +101,33 @@ export default function Index() {
                     Latest Files
                   </Text>
                 </BlockStack>
-                <BlockStack gap="200" >
-                  <Text as="h2" variant="headingMd">
-                    Visting card PSD:
-                  </Text>
-                  <button variant="primary" >
-                    Download
-                  </button>
-                </BlockStack>
+                <InlineStack>
+        <SpacingBackground width="436px" height="20px" margin>
+          {arrayToMapOver.map((item,idx)=>
+          (
+      <InlineStack gap="400" wrap={false} blockAlign="center" key={idx}>
+      <Box>
+      <Text as="h3" variant="headingMd">
+               {idx+1} demo file 1
+              </Text>
+              </Box>
+              <Box>
+      <Text as="h3" variant="headingMd">
+                12- 11- 2023
+              </Text>
+              </Box>
+              <Box>
+
+              <link variant="primary" href={"https://theprintguy-customerfiles.s3.ap-south-1.amazonaws.com/zip"}>
+                Download
+              </link>
+              </Box>
+      </InlineStack>
+          ))}
+
+        </SpacingBackground>
+      </InlineStack>
+
               </BlockStack>
             </Card>
           </Layout.Section>

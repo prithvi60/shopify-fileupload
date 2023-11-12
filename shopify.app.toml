@@ -1,8 +1,8 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-name = "simple-file-uploader"
+name = "Customer Print Files"
 client_id = "c79316471b1706092375856a9b9d4576"
-application_url = "https://critical-speeches-defence-mart.trycloudflare.com"
+application_url = "https://mail-gap-pack-fridge.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,10 +11,10 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://critical-speeches-defence-mart.trycloudflare.com/auth/callback",
-  "https://critical-speeches-defence-mart.trycloudflare.com/auth/shopify/callback",
-  "https://critical-speeches-defence-mart.trycloudflare.com/api/auth/callback",
-  "https://critical-speeches-defence-mart.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://mail-gap-pack-fridge.trycloudflare.com/auth/callback",
+  "https://mail-gap-pack-fridge.trycloudflare.com/auth/shopify/callback",
+  "https://mail-gap-pack-fridge.trycloudflare.com/api/auth/callback",
+  "https://mail-gap-pack-fridge.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]
