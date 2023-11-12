@@ -96,12 +96,31 @@ export default function Index() {
           <Layout.Section>
             <Card>
               <BlockStack gap="500">
-                <BlockStack gap="200">
+                {/* <BlockStack gap="200">
                   <Text as="h2" variant="headingMd">
                     Latest Files
                   </Text>
-                </BlockStack>
+                </BlockStack> */}
                 <BlockStack gap="200">
+      <InlineStack gap="600" wrap={false} blockAlign="center">
+      <Box>
+      <Text as="h2" variant="headingMd">
+      Design Files
+              </Text>
+              </Box>
+              <Box>
+      <Text as="h2" variant="headingMd">
+      Uploaded date
+              </Text>
+              </Box>
+              <Box>
+      <Text as="h2" variant="headingMd">
+      Action
+              </Text>
+              </Box>
+
+        </InlineStack>
+
           {arrayToMapOver.map((item,idx)=>
           (
       <InlineStack gap="600" wrap={false} blockAlign="center" key={idx}>
