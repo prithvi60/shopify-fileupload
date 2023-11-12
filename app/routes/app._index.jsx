@@ -104,15 +104,15 @@ export default function Index() {
                 <BlockStack gap="200">
           {arrayToMapOver.map((item,idx)=>
           (
-      <InlineStack gap="400" wrap={false} blockAlign="center" key={idx}>
+      <InlineStack gap="600" wrap={false} blockAlign="center" key={idx}>
       <Box>
       <Text as="h3" variant="headingMd">
-               {idx+1} demo file 1
+               {idx+1}. demo file {idx+1}
               </Text>
               </Box>
               <Box>
       <Text as="h3" variant="headingMd">
-                12- 11- 2023
+                1{arrayToMapOver.length - idx+1}- 11- 2023
               </Text>
               </Box>
               <Box>
