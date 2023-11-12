@@ -117,9 +117,9 @@ export default function Index() {
               </Box>
               <Box>
 
-              <link variant="primary" href={"https://theprintguy-customerfiles.s3.ap-south-1.amazonaws.com/zip"}>
+              <a variant="primary" href={"https://theprintguy-customerfiles.s3.ap-south-1.amazonaws.com/zip"}>
                 Download
-              </link>
+              </a>
               </Box>
       </InlineStack>
           ))}
