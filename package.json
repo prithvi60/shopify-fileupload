@@ -19,6 +19,8 @@
     "prisma": "prisma"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.449.0",
+    "@aws-sdk/credential-providers": "^3.449.0",
     "@prisma/client": "^4.13.0",
     "@remix-run/node": "^2.0.0",
     "@remix-run/react": "^2.0.0",
